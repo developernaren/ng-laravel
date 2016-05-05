@@ -20,5 +20,10 @@ class ProductController extends Controller
         return Product::forSlug( $slug )->first();
     }
 
+    function delete( $slug ) {
+
+        return Product::forSlug( $slug )->delete();
+    }
+
 
 }
