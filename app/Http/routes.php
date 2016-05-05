@@ -5,7 +5,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'api', function() {
+Route::group(['prefix' => 'api'], function() {
 
 
     Route::get('product', 'ProductController@index');
@@ -26,4 +26,4 @@ Route::group(['prefix' => 'api', function() {
     Route::post('user/{id}', 'UserController@update');
     Route::delete('user/{id}','UserController@delete');
 
-}]);
+});
