@@ -2,7 +2,11 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
+});
+
+Route::get('detail', function( ) {
+    return view('front.detail');
 });
 
 Route::group(['prefix' => 'api'], function() {

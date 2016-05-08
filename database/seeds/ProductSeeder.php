@@ -28,7 +28,8 @@ class ProductSeeder extends Seeder
             Product::create([
                 'name' => $productName,
                 'price' => $faker->randomFloat(),
-                'slug' => str_slug( $productName )
+                'slug' => str_slug( $productName ),
+                'description' => $faker->sentence
 
             ]);
 

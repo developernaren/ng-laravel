@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
 
-    protected $fillable = ['name', 'price', 'slug' ];
+    protected $fillable = ['name', 'price', 'slug', 'description' ];
 
 
     function getNameAttribute( $value ) {
