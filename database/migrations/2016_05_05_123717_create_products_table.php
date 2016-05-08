@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->float('price');
             $table->timestamps();
+
         });
     }
 
